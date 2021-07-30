@@ -1,0 +1,139 @@
+<html>
+	<head>
+		<title>Galleria</title>
+		<link rel="stylesheet" href="store.css">
+		<script>
+			function dropBTN() {
+				var x = document.getElementById("dropBTNBox");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+	</head>
+	<body>
+			<h1 align="center">Galleria</h1>
+			<p align="center">A place where there are no limits for style.</p>
+			<br/>
+			<hr width="80%">
+			<br/>
+			<table align="center">
+				<tr>
+					<td><button class="nav-btn" onclick="javascript:location.href='../homepage.html'">Home</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../AboutUs/index.html'">About Us</button></td>
+					<td><button class="nav-btn" onclick="dropBTN()">Gallery</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Store/store.html'">Store</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Signin_Signup/signup.html'">Sign Up</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Signin_Signup/signin.html'">Sign In</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Help/help.html'">Help/Support</button></td>
+				</tr>
+			</table>
+			<div id="dropBTNBox">
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Female/ladies.html'">Beautiful Ladies</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Male/gentlemen.html'">Handsome Gentlemen</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Children/children.html'">Stylish Children</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Animal/pets.html'">Adorable Pets</button></p>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			
+		<h1 class="s" align="center">STORE</h1>
+		<!-- Icon Box Container -->
+		<div class="cont">
+			<div class="box-container">
+				<div class="icon-box">
+					<br>
+					<center>
+							<img class="slide" src="male.jpg" width="205" height="320">
+							<img class="slide" src="male2.jpg" width="205" height="320">
+							<img class="slide" src="male3.jpg" width="205" height="320">
+					</center>
+					<script>
+						var slideIndex = 0;
+						var delay = 2000;
+						showSlides();
+						function showSlides() {
+							var i;
+							var slides = document.getElementsByClassName("slide");
+							for (i = 0; i < slides.length; i++){slides[i].style.display = "none";}
+							slideIndex++;
+							if (slideIndex > slides.length){slideIndex = 1}    
+							slides[slideIndex-1].style.display = "block"; 
+							if (delay < 7000){setTimeout(showSlides, delay); delay += 2000;}
+							else{delay = 2000; setTimeout(showSlides, delay);}
+						}
+					</script>
+					<h4 align="center">Male Fashion</h4>
+					<p align="center">Price start at $10</p>
+					<center><button class="btn" onclick='location.href="Male.html"'>Find out more</button></center>
+				</div>
+				<div class="icon-box">
+					<br>
+					<center>
+							<img class="slide2" src="female.jpeg" width="205" height="320">
+							<img class="slide2" src="female2.jpg" width="205" height="320">
+							<img class="slide2" src="female3.jpg" width="205" height="320">
+					</center>
+					<script>
+						var slideIndex2 = 0;
+						var delay2 = 4000;
+						showSlides2();
+						function showSlides2(){
+							var i2;
+							var slides2 = document.getElementsByClassName("slide2");
+							for (i2 = 0; i2 < slides2.length; i2++){slides2[i2].style.display = "none";}
+							slideIndex2++;
+							if (slideIndex2 > slides2.length){slideIndex2 = 1}    
+							slides2[slideIndex2 - 1].style.display = "block"; 
+							if (delay2 < 11000){setTimeout(showSlides2, delay2); delay2 += 1000;}
+							else{delay2 = 4000; setTimeout(showSlides2, delay2);}
+						}
+					</script>
+					<h4 align="center">Female Fashion</h4>
+					<p align="center">On sale up to 75%</p>
+					<center><button class="btn" onclick='location.href="Female.html"'>Find out more</button></center>
+					
+				</div>
+				<div class="icon-box">
+					<br>
+					<center>
+							<img class="slide3" src="animal.jpg" width="205" height="320">
+							<img class="slide3" src="animal2.jpg" width="205" height="320">
+							<img class="slide3" src="animal3.jpg" width="205" height="320">
+					</center>
+					<script>
+						var slideIndex3 = 0;
+						var delay3 = 6000;
+						showSlides3();
+						function showSlides3() {
+							var i3;
+							var slides3 = document.getElementsByClassName("slide3");
+							for (i3 = 0; i3 < slides3.length; i3++){slides3[i3].style.display = "none";}
+							slideIndex3++;
+							if (slideIndex3 > slides3.length){slideIndex3 = 1}    
+							slides3[slideIndex3-1].style.display = "block"; 
+							if (delay3 < 13000){setTimeout(showSlides3, delay3); delay3 += 2000;}
+							else{delay3 = 2000; setTimeout(showSlides3, delay3);}
+						}
+					</script>
+					<h4 align="center">Animals Fashion</h4>
+					<p align="center">Limited edition</p>
+					<center><button class="btn" onclick='location.href="https://www.tokopedia.com/find/pet-accessories"'>Find out more</button></center>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="services">
+				
+			</div>
+		</div>
+		<!-- cont -->
+		
+	</body>
+	
+</html>

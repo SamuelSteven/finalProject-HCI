@@ -1,0 +1,56 @@
+body{
+	font-family: sans-serif;
+    background:  #fffdd0;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.8)),url("signinbg.jpg");
+}
+
+.judul{
+	text-align: center;
+	/*membuat semua huruf menjadi kapital*/
+	text-transform: uppercase;
+}
+ 
+.kotak_signin{
+	width: 350px;
+	background: rgba(243, 24, 24, 0.747);
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	padding: 30px 20px;
+}
+ 
+label{
+	font-size: 11pt;
+}
+ 
+.form_signin{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+    margin-bottom: 20px;
+}
+ 
+.tombol_signin{
+	background: #fffdd0;
+    color: brown;
+    margin-top: 30px;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+ 
+.link{
+	color: #fffdd0;
+	text-decoration: none;
+	font-size: 10pt;
+}
+.psw{
+    font-size: 10px;
+}
+hr {
+    border-color: #e67e17a2;
+    align-items: center;
+}

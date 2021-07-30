@@ -1,0 +1,169 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Galleria</title>
+		<style>
+			body {
+				margin: 0;
+				background-color: #fffdd0;
+			}
+			h1 {
+				font-family: helvetica;
+				font-weight: bold;
+				color: #964b00;
+				font-size: 55px;
+			}
+			p {
+				font-family: helvetica;
+				color: #964b00;
+            }
+            ul li{
+                font-family: helvetica;
+				color: #964b00;
+            }
+			.Uppermost {
+				background-color: #fff1d0;
+            }
+            .content{
+                margin-bottom: 50px;
+            }
+            .content p{
+                text-align: center;
+                font-size: 40px;
+            }
+            .content .pages p{
+                font-size: 20px;
+            }
+            .content .pages{
+                border: 1px solid #964b00;
+                width: 800px;
+                margin: auto;
+            }
+			.nav-btn {
+				background-color: transparent;
+				border-style: none;
+				color: #964b00;
+				font-family: helvetica;
+				font-size: 20px;
+			}
+			.nav-btn:hover {
+				background-color: transparent;
+				border-style: none;
+				font-weight: bold;
+				color: #bc5e00;
+				font-family: helvetica;
+				text-decoration: underline;
+				font-size: 20px;
+			}
+			hr {
+				border-color: #964b00;
+			}
+			#dropBTNBox {
+				background-color: brown;
+				width: 10%;
+				position: absolute;
+				right: 50%;
+				display: none;
+			}
+			.dropBTNBoxFont {
+				color: #c08457;
+				font-family: helvetica;
+				font-size: 20px;
+				background-color: transparent;
+				border-style: none;
+			}
+			.dropBTNBoxFont:hover {
+				color: #ac6730;
+				font-family: helvetica;
+				font-size: 20px;
+				background-color: transparent;
+				border-style: none;
+			}
+		</style>
+		<script>
+			function dropBTN() {
+				var x = document.getElementById("dropBTNBox");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="Uppermost">
+			<br/>
+			<h1 align="center">Galleria</h1>
+			<p align="center">A place where there are no limits for style.</p>
+			<br/>
+			<hr width="80%">
+			<br/>
+			<table align="center">
+				<tr>
+					<td><button class="nav-btn" onclick="javascript:location.href='../homepage.html'">Home</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../AboutUs/index.html'">About Us</button></td>
+					<td><button class="nav-btn" onclick="dropBTN()">Gallery</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Store/store.html'">Store</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Signin_Signup/signup.html'">Sign Up</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Signin_Signup/signin.html'">Sign In</button></td>
+					<td><button class="nav-btn">Help/Support</button></td>
+				</tr>
+			</table>
+			<div id="dropBTNBox">
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Female/ladies.html'">Beautiful Ladies</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Male/gentlemen.html'">Handsome Gentlemen</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Children/children.html'">Stylish Children</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Animal/pets.html'">Adorable Pets</button></p>
+			</div>  
+			<br/>
+		</div>
+			<br/>
+            <br/>
+            <div class="content">
+                <p>How can we help you?</p>
+                <div class="page">
+                    <div class="pages">
+                        <p>Home</p>
+                        <p>Home is the initial web page. You can press the <b>Home</b> button on the navigation bar above.</p>
+                    </div>
+                    <div class="pages">
+                        <p>About Us</p>
+                        <p>About us is a web page about us and our website. To see it, you can click <b>About Us</b> button on the navigation bar above.</p>
+                    </div>
+                    <div class="pages">
+                        <p>Gallery</p>
+                        <p>Gallery is a web page that contains a collection of photos with various styles and fashion. We divide it into several sections:</p>
+                        <ul>
+                            <li><b>Beautiful ladies</b> containing a collection of photos of women in their style.</li>
+                            <li><b>Handsome gentlemen</b> which contains a collection of stylish and fashionable photos of men.</li>
+                            <li><b>Stylish children</b> containing a collection of photos of adorable children, and finally.</li>
+                            <li><b>Adorable pets</b> that contain collections Adorable animal photos.</li>
+                        </ul>
+                        <p>To see it, you can click the <b>Gallery</b> button on the navigation bar above.</p>
+                    </div>
+                    <div class="pages">
+                        <p>Store</p>
+                        <p>The store is a web page that provides a variety of products related to the style or mode used in the Galleria photo gallery, and other products based on style, beauty, and cuteness that can help you or your animal shape your fashion and style.</p>
+                        <p>To see it, you can click <b>Store</b> button on the navigation bar above.</p>
+                    </div>
+                    <div class="pages">
+                        <p>Sign Up</p>
+                        <p>Sign up is a website page to register, if you don't have an account. You need to fill in your name, email, telephone number, password, confirm password, date of birth, and gender. Then please read our conditions, if you have already, please click the white box to agree to the terms.</p>
+                        <p>To see it, you can click <b>Sign up</b> button on the navigation bar above.</p>
+                    </div>
+                    <div class="pages">
+                        <p>Sign In</p>
+                        <p>Sign in is a website page to enter a user account, so that users can make purchases in our store.</p>
+                        <p>To enter an account, please fill in your username and password by clicking on the white bar on the username and password. If you have click the sign in button to enter.</p>
+                        <p>If you forget your password, you can request a verification code or call us at <br>(+62) 000000000.</p>
+                        <p>To see it, you can click <b>Sign in</b> button on the navigation bar above.</p>
+                    </div>
+                    <div class="pages">
+                        <p>Help/Support</p>
+                        <p>Help/support is a website page that is intended to assist users in operating or running our website.</p>
+                    </div>
+                </div>
+            </div>
+	</body>
+</html>

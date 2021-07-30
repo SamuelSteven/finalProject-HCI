@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Vollkorn', serif;
+    overflow-x: hidden;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    color: #b23850;
+    height: 50px;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav.tilt{
+    transition: 0.3s;
+}
+
+nav .logo{
+    font-family: 'Satisfy', cursive;
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color: #c3073f;
+    display: block;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #f78888;
+}
+
+/* Hamburger Menu */
+.menu-toogle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toogle input{
+    position: absolute;
+    width: 41px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toogle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toogle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toogle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+
+.menu-toogle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toogle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toogle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+/* Contact */
+.contact{
+    margin: 80px auto;
+    position: fixed;
+    background-color: rgba(255, 254, 254, 0.4);
+    width: 35px;
+    border-radius: 5px;
+    z-index: 999;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.contact img{
+    width: 30px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.contact ul li{
+    list-style: none;
+}   
+
+.contact .insta:hover,
+.contact .gmail:hover,
+.contact .fb:hover{
+    transform: scale(1.1);
+}
+
+/* Weather */
+.weather{
+    margin-top: 15px;
+    margin-right: 35px;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 6;
+}
+
+.weather img{
+    width: 50px;
+    height: 50px;
+}
+
+.weather .morning{
+    position: absolute;
+    opacity: 0;
+}
+
+.weather .afternoon{
+    position: absolute;
+    opacity: 0;
+}
+
+.weather .evening{
+    position: absolute;
+    opacity: 0;
+}
+
+.weather .night{
+    position: absolute;
+    opacity: 0;
+}
+
+.weather .morning.coming,
+.weather .afternoon.coming,
+.weather .evening.coming,
+.weather .night.coming{
+    position: relative;
+    opacity: 1;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(img/woman-wearing-red-knit-cap-while-holding-camera-2773549.jpg);
+    width: 100%;
+    font-family: 'Notable', sans-serif;
+    font-size: 100px;
+    color: #964b00;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: -300px;
+    height: 722px;
+    z-index: 1px;
+    overflow: hidden;
+}
+
+.jumbotron .tilt{
+    margin-left: 80px;
+    padding-top: 300px;
+    transition: 0.3s;
+}
+
+.jumbotron .tilt h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.jumbotron .tilt p{
+    font-size: 25px;
+}
+
+/* Content */
+.content{
+    height: 1000px;
+    background-color:#fff1d0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas: 
+    'header header'
+    'campus team';
+    padding: 100px 0px;
+    box-sizing: border-box;
+}
+
+header{
+    grid-area: header;
+    box-sizing: border-box;
+}
+
+header h1{
+    text-align: center;
+    text-shadow: 2px 2px 4px grey;
+}
+
+header hr{
+    width: 200px;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 100px;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.content header .about{
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 90px;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    color: #964b00;
+}
+
+.content header .about.fade{
+    opacity: 1;
+}
+
+.content .campus img{
+    transition: 0.1s;
+}
+
+.content .campus p{
+    margin-right: 60px;
+    text-align: center;
+    text-shadow: 1px 1px 1px grey;
+    color: #964b00;
+}
+
+.content .campus .binus{
+    margin-left: 80px;
+    padding-right: -300px;
+    width: 70%;
+    height: 600px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: 2px 2px 8px black;
+}
+
+.content .campus .binus.fade{
+    opacity: 1;
+}
+
+.content .team{
+    display: grid;
+    grid-area: team;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 10;
+    justify-items: center;
+    align-items: center;
+}
+
+.content .team .people{
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.content .team .people:nth-child(4){
+    margin-left: 30px;
+}
+
+.content .team .people:nth-child(4) p{
+    margin-left: -9px;
+}
+
+.content .team .people.coming{
+    opacity: 1;
+}
+
+.content .team .people p{
+    text-align: center;
+    text-shadow: 1px 1px 1px grey;
+    color: #964b00;
+}
+
+.content .team .people img{
+    width: 150px;
+    height: 165px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px grey;
+}
+
+/* Service */
+.service{
+    position: relative;
+    padding: 80px 0px;
+    background-attachment: fixed;
+}
+
+.service::after{
+    content: '';
+    display: block;
+    position: absolute;
+    overflow: auto;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(1px);
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+}
+
+.our{
+    background-image: url(img/Fashion.jpg);
+    width: 100%;
+    height: 840px;
+    background-size: cover;
+}
+
+.service header h1{
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px black;
+}
+
+.service header hr{
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px 8px black;
+}
+
+.service .services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.service .services .picture img{
+    width: 400px;
+    box-shadow: 2px 2px 8px black;
+}
+
+.service .services .picture .button p{
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px black;
+}
+
+.service .services .picture a{
+    text-decoration: none;
+}
+
+.service .services .picture .button{
+    margin-top: 25px;
+    margin-left: 106px;
+    width: 140px;
+    height: 60px;
+    background-color: #e27d60;
+    border-radius: 10%;
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service .services .picture .button:hover{
+    transform: scale(1.1);
+}
+
+.service .services .picture .button:last-child{
+    width: 200px;
+}
+
+.service .services .picture{
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.service .services .picture.coming{
+    opacity: 1;
+}
+
+/* Content 2 */
+.content2{
+    height: 900px;
+    background-color: #fff1d0;
+}
+
+/* Content 2 image */
+
+.content2 .image{
+    grid-area: image;
+    margin-left: 20px;
+}
+
+.content2 .image .images img{
+    margin-top: -300px;
+    width: 290px;
+    box-shadow: 2px 2px 8px grey;
+    border: 5px solid black;
+}
+
+.content2 .image .images:nth-child(1){
+    padding-left: -90px;
+    height: 400px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.content2 .image .images:nth-child(2){
+    transform: scale(1);
+    margin-left: 200px;
+    margin-top: -220px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.content2 .image .images:nth-child(3){
+    margin-left: 400px;
+    margin-top: -180px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.content2 .image .images.coming:nth-child(1){
+    opacity: 1;
+}
+
+.content2 .image .images.coming:nth-child(2){
+    opacity: 1;
+}
+
+.content2 .image .images.coming:nth-child(3){
+    opacity: 1;
+}
+
+/* Content 2 word */
+.content2 .word{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.content2 .word.fade{
+    opacity: 1;
+}
+
+.content2 .tilt{
+    transition: 0.3s;
+}
+
+.content2 .heading{
+    padding-left: 800px;
+    padding-top: 120px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #964b00;
+    font-family: 'Notable', sans-serif;
+}
+
+.content2 p{
+    padding-top: 40px;
+    padding-left: 800px;
+    font-size: 25px;
+    color: #964b00;
+}
+
+.content2 .heading span{
+    display: inline-block;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.content2 .heading span:hover{
+    transform: scale(1.5) translateY(-20px);
+}
+
+/* Content 2 quotes */
+.content2 .quotes{
+    float: left;
+    margin-top: 100px;
+    margin-left: -750px;
+    position: absolute;
+    color: #964b00;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.content2 .quotes.fade{
+    opacity: 1;
+}
+
+/* Go Up Tool */
+.goup{
+    background-image: url(img/icons8-send-letter-96.png);
+    background-size: cover;
+    position: absolute;
+    margin-right: 40px;
+    margin-top: 100px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    right:0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.goup:active{
+    opacity: 0;
+}
+
+/* Footer */
+footer .information{
+    background-color: #e8a87c;
+    height: 300px;
+}
+
+footer .footer{
+    background-color: #00151f;
+    color: #fff;
+    height: 50px;
+}
+
+footer .footer p{
+    font-size: 12px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.Category{
+    padding-top: 30px;
+    float: left;
+    padding-left: 140px;
+}
+
+.Category p{
+    line-height: 30px;
+    color: #964b00;
+}
+
+.Category a{
+    text-decoration: none;
+    color: #964b00;
+}
+
+.Category a:hover{
+    color: whitesmoke;
+}
+
+.Connect{
+    float: right;
+    padding-right: 150px;
+    padding-top: 30px;
+}
+
+.contacts{
+    text-align: center;
+    padding-left: 20px;
+}
+
+/* Tool */
+.fade{
+    opacity: 1;
+}
+
+.coming{
+    opacity: 1;
+}
+
+/* Responsive breakpoints */
+
+/* Ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px){
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #85cdb8;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .menu{
+        order: -1;
+        justify-items: end;
+    }
+
+    .menu-toogle{
+        display: flex;
+    }
+}

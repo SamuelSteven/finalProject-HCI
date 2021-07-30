@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Galleria</title>
+		<link rel="stylesheet" href="Male.css">
+		<script>
+			function dropBTN() {
+				var x = document.getElementById("dropBTNBox");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+	</head>
+	<body>
+			<h1 align="center">Galleria</h1>
+			<p align="center">A place where there are no limits for style.</p>
+			<br/>
+			<hr width="80%">
+			<br/>
+			<table align="center">
+				<tr>
+					<td><button class="nav-btn" onclick="javascript:location.href='../homepage.html'">Home</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../AboutUs/index.html'">About Us</button></td>
+					<td><button class="nav-btn" onclick="dropBTN()">Gallery</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Store/store.html'">Store</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Signin_Signup/signup.html'">Sign Up</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Signin_Signup/signin.html'">Sign In</button></td>
+					<td><button class="nav-btn" onclick="javascript:location.href='../Help/help.html'">Help/Support</button></td>
+				</tr>
+			</table>
+			<div id="dropBTNBox">
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Female/ladies.html'">Beautiful Ladies</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Male/gentlemen.html'">Handsome Gentlemen</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Children/children.html'">Stylish Children</button></p>
+				<p align="center"><button class="dropBTNBoxFont" onclick="javascript:location.href='../Animal/pets.html'">Adorable Pets</button></p>
+			</div>
+			<br/>
+			<br/>
+			
+		<h1 class="s" align="center">STORE</h1>
+		<!-- Icon Box Container -->
+		<div class="cont">
+			<div class="box-container">
+				<div class="icon-box">
+					<br>
+					<center><img src="shirt.jpg" width="250" height="300"></center>
+					<h4 align="center">Shirt</h4>
+					<center><button class="btn" onclick='location.href="https://shopee.co.id/search?keyword=t-shirt"' >Search</button></center>
+				</div>
+				<div class="icon-box">
+					<br>
+					<center><img src="pants.jpg" width="240" height="300"></center>
+					<h4 align="center">Pants</h4>
+					<center><button class="btn" onclick='location.href="https://www.uniqlo.com/us/en/men/pants"'>Search</button></center>
+				</div>
+				<div class="icon-box">
+					<br>
+					<center><img src="watch.png" width="250" height="250"></center>
+					<br>
+					<br>
+					<h4 align="center">Accessories</h4>
+					<center><button class="btn" onclick='location.href="https://www.jamtangan.com/"'>Search</button></center>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="services">
+				
+			</div>
+		</div>
+		<!-- cont -->
+		
+	</body>
+	
+</html>

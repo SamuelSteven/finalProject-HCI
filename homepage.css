@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: #fffdd0;
+}
+h1 {
+    font-family: helvetica;
+    font-weight: bold;
+    color: #964b00;
+    font-size: 55px;
+}
+p {
+    font-family: helvetica;
+    color: #964b00;
+}
+.Uppermost {
+    background-color: #fff1d0;
+}
+.hp-btn {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #964b00;
+    color: #964b00;
+    font-size: 55px;
+    font-family: helvetica;
+    padding: 30px;
+    margin-top: 90px;
+    cursor: pointer;
+}
+.hp-btn:hover {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #bc5e00;
+    color: #bc5e00;
+    font-size: 55px;
+    font-family: helvetica;
+    font-weight: bold;
+    padding: 30px;
+}
+.nav-btn {
+    background-color: transparent;
+    border-style: none;
+    color: #964b00;
+    font-family: helvetica;
+    font-size: 20px;
+}
+.nav-btn:hover {
+    background-color: transparent;
+    border-style: none;
+    font-weight: bold;
+    color: #bc5e00;
+    font-family: helvetica;
+    text-decoration: underline;
+    font-size: 20px;
+}
+hr {
+    border-color: #964b00;
+}
+#dropBTNBox {
+    background-color: brown;
+    width: 10%;
+    position: absolute;
+    right: 50%;
+    display: none;
+}
+.dropBTNBoxFont {
+    color: #c08457;
+    font-family: helvetica;
+    font-size: 20px;
+    background-color: transparent;
+    border-style: none;
+}
+.dropBTNBoxFont:hover {
+    color: #ac6730;
+    font-family: helvetica;
+    font-size: 20px;
+    background-color: transparent;
+    border-style: none;
+}

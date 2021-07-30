@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    background-color: #fffdd0;
+}
+h1 {
+    font-family: helvetica;
+    font-weight: bold;
+    color: #964b00;
+    font-size: 55px;
+}
+p {
+    font-family: helvetica;
+    color: #964b00;
+}
+.Uppermost {
+    background-color: #fff1d0;
+}
+.hp-btn {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #964b00;
+    color: #964b00;
+    font-size: 55px;
+    font-family: helvetica;
+    padding: 30px;
+}
+.hp-btn:hover {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #bc5e00;
+    color: #bc5e00;
+    font-size: 55px;
+    font-family: helvetica;
+    font-weight: bold;
+    padding: 30px;
+}
+.nav-btn {
+    background-color: transparent;
+    border-style: none;
+    color: #964b00;
+    font-family: helvetica;
+    font-size: 20px;
+}
+.nav-btn:hover {
+    background-color: transparent;
+    border-style: none;
+    font-weight: bold;
+    color: #bc5e00;
+    font-family: helvetica;
+    text-decoration: underline;
+    font-size: 20px;
+}
+hr {
+    border-color: #964b00;
+}
+#dropBTNBox {
+    background-color: brown;
+    width: 10%;
+    position: absolute;
+    right: 50%;
+    display: none;
+}
+.dropBTNBoxFont {
+    color: #c08457;
+    font-family: helvetica;
+    font-size: 20px;
+    background-color: transparent;
+    border-style: none;
+}
+.dropBTNBoxFont:hover {
+    color: #ac6730;
+    font-family: helvetica;
+    font-size: 20px;
+    background-color: transparent;
+    border-style: none;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+    font-family: helvetica;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}

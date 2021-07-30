@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-color: #fffdd0;
+}
+h1 {
+    font-family: helvetica;
+    font-weight: bold;
+    color: #964b00;
+    font-size: 55px;
+}
+h4, h6{
+    font-family: helvetica;
+    font-weight: bold;
+    color: #964b00;
+    font-size: 14px;
+}
+p {
+    font-family: helvetica;
+    color: #964b00;
+}
+.Uppermost {
+    background-color: #fff1d0;
+}
+.hp-btn {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #964b00;
+    color: #964b00;
+    font-size: 55px;
+    font-family: helvetica;
+    padding: 30px;
+}
+.hp-btn:hover {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #bc5e00;
+    color: #bc5e00;
+    font-size: 55px;
+    font-family: helvetica;
+    font-weight: bold;
+    padding: 30px;
+}
+.nav-btn {
+    background-color: transparent;
+    border-style: none;
+    color: #964b00;
+    font-family: helvetica;
+    font-size: 20px;
+}
+.nav-btn:hover {
+    background-color: transparent;
+    border-style: none;
+    font-weight: bold;
+    color: #bc5e00;
+    font-family: helvetica;
+    text-decoration: underline;
+    font-size: 20px;
+}
+hr {
+    border-color: #964b00;
+}
+#dropBTNBox {
+    background-color: brown;
+    width: 10%;
+    position: absolute;
+    right: 50%;
+    display: none;
+}
+.dropBTNBoxFont {
+    color: #c08457;
+    font-family: helvetica;
+    font-size: 20px;
+    background-color: transparent;
+    border-style: none;
+}
+.dropBTNBoxFont:hover {
+    color: #ac6730;
+    font-family: helvetica;
+    font-size: 20px;
+    background-color: transparent;
+    border-style: none;
+}
+.s{
+    background-color: orange;
+    margin-bottom: 5px;
+}
+.cont {
+    width:90%;
+    margin:0 auto 0 auto;
+    padding:20px;
+}
+.box-container {
+    width:80%;
+    padding:15px;
+    border: 30px solid orange;
+    height: 535px;
+    margin-left: 90px;
+}
+.icon-box {
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 25%;
+    display: inline;
+    margin: 20px;
+    float: left;
+    padding: 15px;
+}
+button:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.btn {
+    border-color: none;
+    border-radius: 10px;
+    background-color: red;
+    font-family: helvetica;
+    font-size: 20px;
+}
+.services{
+    border: 2px dashed black;
+}
