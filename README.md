@@ -1,0 +1,3 @@
+# Final Project Human Computer and Interaction
+
+This is a final project from Human-Computer and Interaction Course. This project is a group project. This project asked me to make a website using HTML, CSS, and Javascript. My friends and I are thinking of making a gallery website. So, we build a place where there are no limits to style which is called Galleria. Galleria is a platform that accommodates various aesthetics and innovations from various objects such as humans and animals. Also provides various products related to the or fashion used in the Galleria photo gallery and other products based on style, beauty, and cuteness.
